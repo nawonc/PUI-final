@@ -1,0 +1,43 @@
+.fullscreen {
+  position: relative;
+  height: 100%;
+  top: 100;
+  bottom: 0;
+  overflow: auto;
+}
+
+.scroll a {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 2em;
+  text-decoration: none;
+  font: normal 400 0.9em 'Avenir';
+  letter-spacing: .1em;
+  color: #000;
+}
+
+.parallax {
+  background-color: #FFE4A1;
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.next-screen {
+  height: 220%; to mess with the length of the white on the page
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  /*top: 100%;*/
+  bottom: 0;
+  padding-bottom: 0;
+  background-color: white;
+  box-shadow: 0em -0.1em 4em rgba(168, 168, 168, 0.1);
+}
