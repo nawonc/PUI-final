@@ -2,6 +2,34 @@ html, body {
   height: 100%;
 }
 
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
 .fullscreen {
   position: relative;
   min-height: 100%;
@@ -12,21 +40,21 @@ html, body {
 }
 
 .navigation {
+  padding-top: 1%;
   position: fixed;
   z-index: 999;
   top: 0;
   width: 100%;
-  left: 50% - 265px;
 }
 
 .nav {
-  /*position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
-  width: 100%;*/
-  /*top: 0;*/
-  /*text-align: center;*/
+  width: 100%;
+  justify-content: center;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
 }
 
 .nav-hex {
@@ -70,21 +98,102 @@ html, body {
   background-color: #FFE4A1;
 }
 
+.hexagon.home:before {
+  border-bottom: 9.53px solid #FFE4A1;
+}
+
+.hexagon.home:after {
+  border-top: 9.53px solid #FFE4A1;
+}
+
 .hexagon.about {
   background-color: #FFF7E4;
+}
+
+.hexagon.about:before {
+  border-bottom: 9.53px solid #FFF7E4;
+}
+
+.hexagon.about:after {
+  border-top: 9.53px solid #FFF7E4;
 }
 
 .hexagon.hive {
   background-color: #FFD48E;
 }
 
+.hexagon.hive:before {
+  border-bottom: 9.53px solid #FFD48E;
+}
+
+.hexagon.hive:after {
+  border-top: 9.53px solid #FFD48E;
+}
+
 .hexagon.pollination {
-  background-color: #CFE8EF;
+  background-color: #E4F2F6;
+}
+
+.hexagon.pollination:before {
+  border-bottom: 9.53px solid #E4F2F6;
+}
+
+.hexagon.pollination:after {
+  border-top: 9.53px solid #E4F2F6;
 }
 
 .hexagon.effects {
-  background-color: #
+  background-color: #B2E3E6;
 }
+
+.hexagon.effects:before {
+  border-bottom: 9.53px solid #B2E3E6;
+}
+
+.hexagon.effects:after {
+  border-top: 9.53px solid #B2E3E6;
+}
+
+.hexagon.protect {
+  background-color: #80CFA9;
+}
+
+.hexagon.protect:before {
+  border-bottom: 9.53px solid #80CFA9;
+}
+
+.hexagon.protect:after {
+  border-top: 9.53px solid #80CFA9;
+}
+
+.hexagon.active {
+  border-left: solid 3px #ffffff;
+  border-right: solid 3px #ffffff;
+}
+
+/*.hexagon.active:before,
+.hexagon.active:after {
+  z-index: 1;
+  width: 23.33px;
+  height: 23.33px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 1.8327px;
+}
+
+.hexagon.active:before {
+  top: -11.6673px;
+  border-top: solid 4.2426px #ffffff;
+  border-right: solid 4.2426px #ffffff;
+}
+
+.hexagon.active:after {
+  bottom: -11.6673px;
+  border-bottom: solid 4.2426px #ffffff;
+  border-left: solid 4.2426px #ffffff;
+}*/
 
 .scroll a {
   text-align: center;
@@ -124,18 +233,209 @@ html, body {
   left: 0;
 }
 
+.page-title {
+  margin-top: 1%;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*page color*/
 #about {
   background-color: #FFD48E;
 }
 
+/*top banner color*/
 .about {
   background-color: #FFF7E4;
 }
 
+#hive {
+  background-color: #E4F2F6;
+}
+
+.hive {
+  background-color: #FFD48E;
+}
+
+#pollination {
+  background-color: #B2E3E6;
+}
+
+.pollination {
+  background-color: #E4F2F6;
+}
+
+#effects {
+  background-color: #F6E7CB;
+}
+
+.effects {
+  background-color: #B2E3E6;
+}
+
+#protect {
+  background-color: #CCF0DA;
+}
+
+.protect {
+  background-color: #80CFA9;
+}
+
 .header {
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
   left: 0;
-  height: 15%;
+  height: 9%;
+}
+
+.header-bee {
+  height: 50%;
+  position: absolute;
+  top: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 900;
+}
+
+.page-title {
+  text-align: center;
+  color: #3C1518;
+}
+
+/* ABOUT THE HONEYBEE */
+
+#about .page-title {
+  color: #FFF7E4;
+}
+
+.about-img {
+  /*align-content: center;*/
+  width: 40%;
+  max-width: 300px;
+  background-color: #FFF7E4;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.about-img img {
+  /*height: 100%;*/
+  width: 100%;
+  max-width: 400px;
+}
+
+.about-text {
+  /*text-align: center;*/
+}
+
+table {
+  /*width: 100%;*/
+  border-collapse: collapse;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Avenir;
+  font-size: 15px;
+  border: 3px solid #FFF7E4;
+  padding: 3%;
+  color: #3C1518;
+}
+
+th {
+  text-align: right;
+  padding: 2%;
+}
+
+td {
+  padding: 2%;
+}
+
+/* POLLINATION ROWS */
+
+.poll-row {
+  position: relative;
+  height: 22.75%;
+  color: #3C1518;
+}
+
+#poll-head {
+  text-align: left;
+  display: block;
+}
+
+#poll-head h2 {
+  /*margin-left: 2%;*/
+  padding-right: 5%;
+  padding-left: 5%;
+  /*margin: 1%;*/
+}
+
+.poll-row .col {
+  /*text-align: center;*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*margin-top: auto;*/
+  /*margin-bottom: auto;*/
+}
+
+.poll-row img {
+  height: 50%;
+  /*margin-top: 27%;*/
+}
+
+.plain img {
+  height: 75%;
+  opacity: 0.8;
+}
+
+.poll-row p {
+  font-family: Avenir;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#almond {
+  /*margin-top: 40%;*/
+  height: 25%;
+}
+
+.yellow {
+  background-color: #F4D06F;
+}
+
+.blue {
+  background-color: #90BAD8;
+}
+
+.green {
+  background-color: #80CFA9;
+}
+
+.pink {
+  background-color: #F7AF9D;
+}
+
+/* INSIDE THE HIVE */
+
+.bee-roles {
+  text-align: center;
+  height: 30%;
+}
+
+.bee-roles img {
+  /*height: 100%;*/
+}
+
+.hive-text {
+  justify-content: center;
+  color: #3C1518;
 }
