@@ -214,6 +214,7 @@ html {
 
 #home {
   background-color: #FFE4A1;
+
 }
 
 .title {
@@ -228,7 +229,7 @@ html {
 #home-box {
   background-color: #FFF7E4;
   position: absolute;
-  height: 40%;
+  height: 37%;
   bottom: 0;
   left: 0;
 }
@@ -280,6 +281,15 @@ html {
   background-color: #80CFA9;
 }
 
+.parallax {
+  /*background-image: linear-gradient(to bottom,  rgba(255,168,76,0.6) 0%,rgba(255,123,13,0.6) 100%), url("assets/yellow-flowers.jpeg");*/
+  height: 70%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header {
   position: relative;
   top: 0;
@@ -304,24 +314,49 @@ html {
   color: #3C1518;
 }
 
+/* HOME ANIMATION */
+
+.contain {
+  /*z-index: 1;*/
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*// min-height: 100vh;*/
+  min-height: 35rem;
+  background-image: linear-gradient(to bottom,  rgba(255,168,76,0.6) 0%,rgba(255,123,13,0.6) 100%), url("assets/yellow-flowers.jpeg");
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center center;
+  padding: 2rem;
+  opacity: 0.75;
+}
+
 /* ABOUT THE HONEYBEE */
 
 #about .page-title {
   color: #FFF7E4;
 }
 
-.about-img {
-  /*align-content: center;*/
-  width: 40%;
-  max-width: 300px;
-  background-color: #FFF7E4;
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 5%;
+.about-honeybee {
   margin-left: auto;
   margin-right: auto;
+}
 
+.about-img {
+  /*width: ;*/
+  max-width: 45%;
+  background-color: #FFF7E4;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-img img {
@@ -331,29 +366,31 @@ html {
 }
 
 .about-text {
-  /*text-align: center;*/
+  /*width: 100%;*/
 }
 
 table {
-  /*width: 100%;*/
   border-collapse: collapse;
-  margin-top: 1%;
   margin-left: auto;
   margin-right: auto;
   font-family: Avenir;
   font-size: 15px;
   border: 3px solid #FFF7E4;
-  padding: 3%;
   color: #3C1518;
+  width: 45%;
+  background-color: #FFF7E4;
 }
 
 th {
   text-align: right;
   padding: 2%;
+  padding-left: 13%;
+  /*font-weight: 400;*/
 }
 
 td {
   padding: 2%;
+  padding-right: 3%;
 }
 
 /* POLLINATION ROWS */
@@ -427,15 +464,48 @@ td {
 /* INSIDE THE HIVE */
 
 .bee-roles {
+  margin-top: 2%;
   text-align: center;
   height: 30%;
+  font-family: Avenir;
+  color: #3C1518;
+  justify-content: center;
+}
+
+.bee-roles .col {
+  padding: 0;
 }
 
 .bee-roles img {
-  /*height: 100%;*/
+  /*width: 75%;*/
 }
 
 .hive-text {
   justify-content: center;
+  padding-top: 1%;
+}
+
+.hive-text p {
   color: #3C1518;
+  font-size: 15px;
+  font-family: 'Avenir';
+}
+
+.my-col {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  /*text-align: left;*/
+  /*margin-left: 20%;
+  margin-right: 18%;*/
+}
+
+/* PROTECT THE BEES */
+
+.how-to-protect {
+  padding-top: 5%;
+}
+
+.how-to-protect img {
+  width: 100%;
+  padding: 4%;
 }
