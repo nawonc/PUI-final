@@ -109,7 +109,6 @@ html {
   -webkit-animation: sdb04 2s infinite;
   animation: sdb04 2s infinite;
   box-sizing: border-box;
-  /*box-shadow: 5px 5px 10px #888888;*/
 }
 @-webkit-keyframes sdb04 {
   0% {
@@ -332,7 +331,6 @@ a:hover {
 }
 
 .parallax {
-  /*background-image: linear-gradient(to bottom,  rgba(255,168,76,0.6) 0%,rgba(255,123,13,0.6) 100%), url("assets/yellow-flowers.jpeg");*/
   height: 70%; 
   background-attachment: fixed;
   background-position: center;
@@ -367,13 +365,11 @@ a:hover {
 /* HOME ANIMATION */
 
 .contain {
-  /*z-index: 1;*/
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  /*// min-height: 100vh;*/
   min-height: 35rem;
   background-image: linear-gradient(to bottom,  rgba(255,168,76,0.6) 0%,rgba(255,123,13,0.6) 100%), url("assets/yellow-flowers.jpeg");
   background-blend-mode: soft-light;
@@ -414,7 +410,6 @@ a:hover {
   height:6px;
   border-radius:100%;
   animation:spanAnimation 3s cubic-bezier(0.3, 0.27, 0.07, 1.64) infinite;
-  /*box-shadow:rgba(255,255,255,1) 0 0 20px 2px;*/
 }
 @keyframes bigBoxAnimation {
   100% {transform:rotate(360deg);}
@@ -438,7 +433,6 @@ a:hover {
 }
 
 .about-img {
-  /*width: ;*/
   max-width: 45%;
   background-color: #FFF7E4;
   text-align: center;
@@ -456,10 +450,6 @@ a:hover {
   /*height: 100%;*/
   width: 100%;
   max-width: 400px;
-}
-
-.about-text {
-  /*width: 100%;*/
 }
 
 table {
@@ -543,25 +533,12 @@ td {
 }
 
 #poll-head h2 {
-  /*margin-top: 5%;*/
-  /*margin-left: 2%;*/
   font-family: "Patua One", cursive;
   padding-right: 5%;
   padding-left: 5%;
   font-size: 1.5em;
-  /*margin: 1%;*/
 }
 
-/*.poll-row .col {
-  margin: 0;
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-}
-*/
 .fact-img {
   height: 100%;
   display: block;
@@ -576,12 +553,6 @@ td {
   top: 50%;
   left: 28%;
 }
-
-/*.poll-row img {
-  display: block;
-  height: 50%;
-  /*margin-top: 27%;*/
-/*}*/
 
 .plain .fact-img  img {
   height: 50%;
@@ -642,10 +613,6 @@ td {
   padding: 0;
 }
 
-.bee-roles img {
-  /*width: 75%;*/
-}
-
 .hive-text {
   justify-content: center;
   padding-top: 1%;
@@ -659,10 +626,6 @@ td {
 
 .my-col {
   padding-top: 2%;
-  /*padding-bottom: 2%;*/
-  /*text-align: left;*/
-  /*margin-left: 20%;
-  margin-right: 18%;*/
 }
 
 .bee-role {
@@ -736,15 +699,12 @@ label + input[type=radio] + label {
 /* floating animation source: https://codepen.io/MarioDesigns/pen/woJgeo */
 @keyframes float {
   0% {
-    /*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
     transform: translatey(0px);
   }
   50% {
-    /*box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);*/
     transform: translatey(-30px);
   }
   100% {
-    /*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
     transform: translatey(0px);
   }
 }
@@ -780,7 +740,6 @@ label + input[type=radio] + label {
 }
 
 #buzz-2 {
-  /*position: absolute;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -878,23 +837,15 @@ dfn:hover::before {top: 20px;}
   overflow: hidden;
   top: 0;
   left: 0;
-  /*margin: auto;*/
-  /*vertical-align: center;*/
-  /*align-content: center;*/
 }
 
 .how-to {
   padding: 0;
-  /*width: 10%;*/
-  /*margin: 1%;*/
-  /*float: left;*/
-  /*border: 10px solid #fff;*/
   overflow: hidden;
   position: relative;
   text-align: center;
   box-shadow: 1px 1px 2px #e6e6e6;
   cursor: default;
-  /*background: #fff url(../images/bgimg.jpg) no-repeat center center*/
 }
 
 .how-to img {
@@ -904,21 +855,16 @@ dfn:hover::before {top: 20px;}
 }
 
 .how-to h4 {
-  /*text-transform: uppercase;*/
   color: #fff;
   text-align: center;
   position: relative;
   font-size: 1.5em;
   font-family: 'Roboto Slab', serif;
   padding: 10px;
-  /*background: rgba(0, 0, 0, 0.8);*/
   margin: 20px 0 0 0;
   transform: translateY(-100px);
   opacity: 0;
   transition: all 0.2s ease-in-out;
-  /*margin-top: 20%;*/
-  /*margin-bottom: 5%;*/
-  /*padding: 10%;*/
 }
 
 .how-to p {
@@ -927,8 +873,6 @@ dfn:hover::before {top: 20px;}
   font-size: 1em;
   position: relative;
   color: #fff;
-  /*padding: 0px 20px 0px;*/
-  /*text-align: center;*/
   transform: translateY(100px);
   opacity: 0;
   transition: all 0.2s linear;
@@ -967,14 +911,6 @@ dfn:hover::before {top: 20px;}
   font-weight: 800;
 }
 
-/*@media only screen and (max-width: 650px) {
-  .poll-row .col { 
-    margin: 1% 0 1% 0%;
-    width: 100%;
-    display: block;
-  }
-}*/
-
 .col-sm-5ths {
     position: relative;
     min-height: 1px;
@@ -991,17 +927,9 @@ dfn:hover::before {top: 20px;}
     vertical-align: middle;
 }
 
-
-/*@media (min-width: 768px) {
-    .col-sm-5ths {
-        width: 20%;
-        float: left;
-    }
-}*/
-
 @media only screen and (max-width: 768px) {
     .col-sm-5ths {
-        width: 100%;
+        width: 33.3%;
     }
 }
 
