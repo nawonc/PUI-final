@@ -552,21 +552,16 @@ td {
   /*margin: 1%;*/
 }
 
-.poll-row .col {
-  display: inline-block;
-  /*text-align: center;*/
+/*.poll-row .col {
   margin: 0;
   position: relative;
-  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  /*margin-top: auto;*/
-  /*margin-bottom: auto;*/
 }
-
+*/
 .fact-img {
   height: 100%;
   display: block;
@@ -971,6 +966,45 @@ dfn:hover::before {top: 20px;}
   font-family: 'Roboto Slab', serif;
   font-weight: 800;
 }
+
+/*@media only screen and (max-width: 650px) {
+  .poll-row .col { 
+    margin: 1% 0 1% 0%;
+    width: 100%;
+    display: block;
+  }
+}*/
+
+.col-sm-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 20%;
+    float: left;
+
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+
+/*@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}*/
+
+@media only screen and (max-width: 768px) {
+    .col-sm-5ths {
+        width: 100%;
+    }
+}
+
 
 @media screen and (max-width: 31.5em) {
   .grid {
