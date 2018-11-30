@@ -42,7 +42,7 @@
 
 
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Patua+One" rel="stylesheet">
 
 </head>
 
@@ -53,31 +53,37 @@
       <div class="hex-container">
         <a href="#home">
           <div class="hexagon home"></div>
+          <p class="nav-text" id="hex-home">Home</p>
         </a>
       </div>
       <div class="hex-container">
         <a href="#about">
           <div class="hexagon about"></div>
+          <p class="nav-text" id="hex-about">About</p>
         </a>
       </div>
       <div class="hex-container">
         <a href="#hive">
           <div class="hexagon hive"></div>
+          <p class="nav-text" id="hex-hive">Hive</p>
         </a>
       </div>
       <div class="hex-container">
-        <a href="#pollination">
-          <div class="hexagon pollination"></div>
+        <a href="#buzz">
+          <div class="hexagon buzz"></div>
+          <p class="nav-text" id="hex-buzz">Buzz</p>
         </a>
       </div>
       <div class="hex-container">
         <a href="#effects">
           <div class="hexagon effects"></div>
+          <p class="nav-text" id="hex-effects">World</p>
         </a>
       </div>
       <div class="hex-container">
         <a href="#protect">
           <div class="hexagon protect"></div>
+          <p class="nav-text" id="hex-protect">Protect</p>
         </a>
       </div>
     </div>
@@ -86,7 +92,7 @@
 
 <!-- HOME SCREEN -->
   <div class="container-fluid fullscreen" id="home">
-    <div class="title">
+    <div class="title" data-aos="fade-up">
       <img class="img-fluid" src="assets/home-title.png" id="home-title">
     </div>
 
@@ -118,12 +124,12 @@
     </div>
 
     <div class="row">
-      <div class="col about-honeybee">
+      <div class="col about-honeybee" data-aos="fade-right" data-aos-offset="300">
         <div class="about-img">
           <img src="assets/bee2.png">
         </div>
 
-        <div class="about-text">
+        <div class="about-text" data-aos="fade-left" data-aos-offset="300">
           <table>
             <tr>
               <th>Scientific Name:</th>
@@ -167,14 +173,14 @@
       <h1>Inside the Hive</h1>
     </div>
 
-    <div class="row hive-text">
+    <div class="row hive-text" data-aos="fade-down">
       <div class="my-col">
         <p>Honeybees live in highly organized societies called <b>colonies</b>.<br/>Bee colonies are known as <b>superorganisms</b> because no single bee can survive on its own.<br/>Each bee must carry out its own duties and cooperate with one another to survive.</p>
         <p>A bee colony consists of three main roles:</p>
       </div>
     </div>
 
-    <div class="row bee-btns">
+    <div class="row bee-btns" data-aos="fade-up">
       <form>
         <div id="radio-group">
           <input type="radio" id="queen-btn" name="selector" checked="checked" value="queen"><label for="queen-btn">Queen Bee</label>
@@ -184,7 +190,7 @@
       </form>
     </div>
 
-    <div class="row bee-text" id="animate">   
+    <div class="row bee-text" id="animate" data-aos="fade-up">   
       
       <div id="queen-content">
         <div class="col-md-2"></div>
@@ -192,7 +198,7 @@
           <img src="assets/hive/queen.png">
         </div>
         <div class="col-md-5">
-          <h4>Queen Bee</h4>
+          <h4 class="bee-role">Queen Bee</h4>
           <ul>
             <li>As the only fertile female in the colony, the Queen bee has one role: <b>reproduction</b>.</li>
             <li>Each queen bee has a unique perfume called a <b>pheromone</b> that only the bees in the hive can smell. This pheromone regulates the behavior of the other bees in the hive.</li>
@@ -208,7 +214,7 @@
           <img src="assets/hive/worker.png">
         </div>
         <div class="col-md-5">
-          <h4>Workers</h4>
+          <h4 class="bee-role">Workers</h4>
           <ul>
             <li>Worker bees make up the <b>largest population</b> within a bee colony.</li>
             <li>Worker bees jobs include housekeeping, feeding other bees and larvae, collecting the pollen and nectar, and making the wax. Their roles depend on how old they are.</li>
@@ -224,7 +230,7 @@
           <img src="assets/hive/drone.png">
         </div>
         <div class="col-md-5">
-          <h4>Drones</h4>
+          <h4 class="bee-role">Drones</h4>
           <ul>
             <li>Drones are hatched from unfertilized eggs and therefore only have one set of genes.</li>
             <li>Drones only purpose is to mate with queen bees outside their hive. Once they do so, the drone dies.</li>
@@ -238,22 +244,33 @@
 
      
     <div class="scroll" id="scroll-button">
-      <a href="#pollination"><span></span></a>
+      <a href="#buzz"><span></span></a>
     </div>
   </div>
 
 <!-- THE BUZZ ON HONEYBEES -->
-  <div class="container-fluid fullscreen" id="pollination">
-    <div class="container-fluid header pollination text-center">
+  <div class="container-fluid fullscreen" id="buzz">
+    <div class="container-fluid header buzz text-center">
       <img src="assets/bee.png" class="header-bee">
     </div>
     <div class="container-fluid page-title">
       <h1>The Buzz on HoneyBees</h1>
+      <p>Sweet facts about honeybees!</p>
     </div>
 
-    <div class="row-fluid flower">
-      <div class="col">
-        <img src="assets/flower.png">
+    <div class="row-fluid buzz-bees-1" data-aos="fade-right"  data-aos-offset="300">
+      <div class="col-md-4" id="buzz-1">
+        <dfn data-info="Nectar is a sweet watery substance that the bees gather. After they process the nectar in their stomach they regurgitate it into the honeycomb cells. Then they fan with their wings to remove excess moisture. The final result is honey."><img src="assets/emoji-flip.png"><p>Nectar</p></dfn>
+      </div>
+    </div>
+    <div class="row-fluid buzz-bees-2" data-aos="fade-right">
+      <div class="col-md-4" id="buzz-2">
+        <dfn data-info="Bees carry pollen on their hind legs called a pollen basket. Pollen is a source of protein for the hive and is needed to feed to the baby bees to help them grow."><img src="assets/emoji-flip.png"><p>Pollen</p></dfn>
+      </div>
+    </div>
+    <div class="row-fluid buzz-bees-3" data-aos="fade-left" data-aos-offset="200">
+      <div class="col-md-4" id="buzz-3">
+        <dfn data-info="Honeybees perform a ‘waggle dance’ to share information about the best food sources. When the worker returns to the hive, it moves in a figure-of-eight and waggles its body to indicate the direction of the food source."><img src="assets/emoji.png"><p>Waggle Dance</p></dfn>
       </div>
     </div>
 
@@ -268,82 +285,157 @@
     <div class="row-fluid header effects text-center">
       <img src="assets/bee.png" class="header-bee">
     </div>
-    <!-- div class="container-fluid page-title">
-      <h2>The Importance of Pollination</h2>
-    </div> -->
 
-    <div class="row poll-row">
-      <div class="col" id="poll-head">
-        <h2>A World Without Bees</h2>
-        <p>Bees and other pollinating insects play an essential role in ecosystems.</p>
+      <div class="row poll-row">
+        <div class="col" id="poll-head" data-aos="zoom-in">
+          <h2>A World Without Bees</h2>
+          <p>Bees and other pollinating insects play an essential role in ecosystems.</p>
+          <p>A world without pollinators would be devastating for food production.</p>
+        </div>
+        <div class="col yellow facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" src="assets/pollination/citrus.png">
+          </div>
+          <div class="fact-text">
+            <h4>Citrus Fruits</h4>
+            <p>Our daily cup of OJ would be a lot more expensive without honeybees.</p>
+          </div>
+        </div>
+        <div class="col blue facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" src="assets/pollination/blueberry.png">
+          </div>
+          <div class="fact-text">
+            <h4>Blueberries</h4>
+            <p>This superfruit is almost entirely dependent on honeybee pollination.</p>
+          </div>
+        </div>
+        <div class="col yellow facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" src="assets/pollination/coffee.png">
+          </div>
+          <div class="fact-text">
+            <h4>Coffee Beans</h4>
+            <p>Honeybees are pollination boosters, increasing coffee production up to 25%.</p>
+          </div>
+        </div>
+        <div class="col" data-aos="zoom-in">
+          <p>It's estimated that there are about 2.7 million bee colonies in the U.S. today.</p>
+        </div>
       </div>
-      <div class="col yellow">
-        <img class="img-fluid" src="assets/pollination/citrus.png">
-      </div>
-      <div class="col blue">
-        <img class="img-fluid" src="assets/pollination/blueberry.png">
-      </div>
-      <div class="col yellow">
-        <img class="img-fluid" src="assets/pollination/coffee.png">
-      </div>
-      <div class="col">
-        <p>It's estimated that there are about 2.7 million bee colonies in the U.S. today.</p>
-      </div>
-    </div>
 
-    <div class="row poll-row">
-      <div class="col plain">
-        <img class="img-fluid" src="assets/pollination/bee-flower.png">
+      <div class="row poll-row">
+        <div class="col plain" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" src="assets/pollination/bee-flower.png">
+          </div>
+        </div>
+        <div class="col green facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" src="assets/pollination/herbs.png">
+          </div>
+          <div class="fact-text">
+            <h4>Herbs</h4>
+            <p>Herbs like basil, parsley, nutmeg, and dill are largely pollinated by bees.</p>
+          </div>
+        </div>
+        <div class="col pink facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" src="assets/pollination/sunflower.png">
+          </div>
+          <div class="fact-text">
+            <h4>Oils</h4>
+            <p>Sunflower, canola, and sesame are all dependent on honeybee pollination.</p>
+          </div>
+        </div>
+        <div class="col" id="poll-text" data-aos="zoom-in">
+          <p>Honey comes in different colors and flavours. The flower where the nectar was gathered from determines the flavour and colour of the honey</p>
+        </div>
+        <div class="col pink facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" id="onion" src="assets/pollination/onion.png">
+          </div>
+          <div class="fact-text">
+            <h4>Onions</h4>
+            <p>Heavily dependent on honeybee pollination. You'll be shedding tears even when they're gone!</p>
+          </div>
+        </div>
       </div>
-      <div class="col green">
-        <img class="img-fluid" src="assets/pollination/herbs.png">
-      </div>
-      <div class="col pink">
-        <img class="img-fluid" src="assets/pollination/sunflower.png">
-      </div>
-      <div class="col" id="poll-text">
-        <p></p>
-      </div>
-      <div class="col pink">
-        <img class="img-fluid" src="assets/pollination/onion.png">
-      </div>
-    </div>
 
-    <div class="row poll-row">
-      <div class="col pink">
-        <img class="img-fluid" src="assets/pollination/cherry.png">
+      <div class="row poll-row">
+        <div class="col pink facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" src="assets/pollination/cherry.png">
+          </div>
+          <div class="fact-text">
+            <h4>Cherries</h4>
+            <p>Honeybees are crucial in producing enough fruit for a commercially viable crop.</p>
+          </div>
+        </div>
+        <div class="col" data-aos="zoom-in">
+          <p><b>One third</b> of the world’s food supply depends on insect pollination, mainly bees.</p>
+        </div>
+        <div class="col yellow facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid almond" id="almond" src="assets/pollination/almond.png">
+          </div>
+          <div class="fact-text">
+            <h4>Almonds</h4>
+            <p>California's top agricultural export is completely dependent on bees.</p>
+          </div>
+        </div>
+        <div class="col plain" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" src="assets/pollination/honey.png">
+          </div>
+        </div>
+        <div class="col blue facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" id="cotton" src="assets/pollination/cotton.png">
+          </div>
+          <div class="fact-text">
+            <h4>Cotton and Flax</h4>
+            <p>Honeybees play an essential role in pollinating important crops.</p>
+          </div>
+        </div>
       </div>
-      <div class="col">
-        <p><b>One third</b> of the world’s food supply depends on insect pollination, mainly bees.</p>
-      </div>
-      <div class="col yellow">
-        <img class="img-fluid almond" id="almond" src="assets/pollination/almond.png">
-      </div>
-      <div class="col plain">
-        <img class="img-fluid" src="assets/pollination/honey.png">
-      </div>
-      <div class="col blue">
-        <img class="img-fluid" src="assets/pollination/cotton.png">
-      </div>
-    </div>
 
-    <div class="row poll-row">
-      <div class="col yellow">
-        <img class="img-fluid" src="assets/pollination/beeswax.png">
+      <div class="row poll-row">
+        <div class="col yellow facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" src="assets/pollination/beeswax.png">
+          </div>
+          <div class="fact-text">
+            <h4>Bee Products</h4>
+            <p>Bees also create the extremely valuable pollen, beeswax, and propolis.</p>
+          </div>
+        </div>
+        <div class="col blue facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" src="assets/pollination/cow.png">
+          </div>
+          <div class="fact-text">
+            <h4>Cow feed</h4>
+            <p>All the food products in the meat and dairy industry are in danger without bees.</p>
+          </div>
+        </div>
+        <div class="col" data-aos="zoom-in">
+          <p>There are a variety of insect pollinators, but bees are responsible for the vast majority of pollination.</p>
+        </div>
+        <div class="col green facts" data-aos="zoom-in">
+          <div class="fact-img">
+            <img class="img-fluid" src="assets/pollination/clover.png">
+          </div>
+          <div class="fact-text">
+            <h4>Clover and Alfalfa</h4>
+            <p>Crucial feed for cattle, which has huge implications for the meat and dairy industry.</p>
+          </div>
+        </div>
+        <div class="col" data-aos="zoom-in">
+          <p>Honey bees add an estimated $15 billion to the U.S. economy each year in increased crop yields.</p>
+        </div>
       </div>
-      <div class="col blue">
-        <img class="img-fluid" src="assets/pollination/cow.png">
-      </div>
-      <div class="col">
-        <p>There are a variety of insect pollinators, but bees are responsible for the vast majority of pollination.</p>
-      </div>
-      <div class="col green">
-        <img class="img-fluid" src="assets/pollination/clover.png">
-      </div>
-      <div class="col">
-        <p>Honey bees add an estimated $15 billion to the U.S. economy each year in increased crop yields.</p>
-      </div>
-    </div>
+    
     <div class="scroll" id="scroll-button">
       <a href="#protect"><span></span></a>
     </div>
@@ -360,17 +452,33 @@
       <p>Here's what you can do to help!</p>
     </div>
 
-    <div class="row how-to-protect">
-      <div class="col-md-4">
+    <div class="row" id="how-to-protect" data-aos="fade-down">
+      
+      <div class="col-md-4 how-to" id="lavender">
         <img src="assets/protect/lavender.jpg">
+        <div class="mask">
+          <h4>Plant Flowers</h4>
+          <p>Especially flowers rich in nectar, such as lavender and bluebells! These will help bees find the food they need. It's good to plant flowers in patches too because bees like to focus on one plant type at a time.</p>
+        </div>
       </div>
-      <div class="col-md-4">
+
+      <div class="col-md-4 how-to" id="pesticide">
         <img src="assets/protect/pesticide.jpg">
+        <div class="mask">
+          <h4>Avoid Harmful Pesticides</h4>
+          <p>Synthetic pesticides, fertilizers, and herbicides are harmful to bees. Opt for organic pesticide options if you must, and only spray at night when pollinators are least active.</p>
+        </div>
       </div>
-      <div class="col-md-4">
+
+      <div class="col-md-4 how-to" id="bath">
         <img src="assets/protect/bee-bath.jpg">
+        <div class="mask">
+          <h4>Create a Bee Bath</h4>
+          <p>Fill a shallow bird bath or a small dish or bowl with clean water, and arrange pebbles and stones inside so that they poke out of the water. Bees will land on the stones and pebbles to drink the water as they take a break from foraging and pollinating.</p>
+        </div>
       </div>
     </div>
+    <h5 class="footer">Thank you!</h5>
   </div>
 
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
