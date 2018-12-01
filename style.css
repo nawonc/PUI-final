@@ -303,6 +303,7 @@ a:hover {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 50%;
+  height: 100%;
 }
 
 .buzz {
@@ -737,7 +738,7 @@ label + input[type=radio] + label {
   display: block;
   width: 100%;
   position: absolute;
-  top: 35%;
+  top: 45%;
   text-align: center;
   justify-content: center;
   margin-left: 10%;
@@ -759,8 +760,9 @@ label + input[type=radio] + label {
   display: block;
   width: 100%;
   position: absolute;
-  top: 45%;
-  float: right;
+  top: 30%;
+  right: 20%;
+  /*float: right;*/
 }
 
 #buzz-3 {
@@ -787,10 +789,11 @@ dfn::after {
   content: attr(data-info);
   display: inline;
   position: absolute;
-  top: 22px; left: 0;
+  top: 22px; 
+  left: 0;
   opacity: 0;
-  width: 230px;
-  font-size: 13px;
+  width: 200px;
+  font-size: 0.8em;
   font-weight: 700;
   line-height: 1.5em;
   padding: 0.5em 0.8em;

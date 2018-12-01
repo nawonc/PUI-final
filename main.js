@@ -19,18 +19,18 @@ $(document).ready(function() {
   $('#radio-group').click(function() {
     var beeType = $('input[name=selector]:checked').val(); 
     if (beeType == 'queen') {
-      $('#queen-content').slideToggle('slow', 'swing');
       $("#worker-content").hide();
       $("#drone-content").hide();
+      $('#queen-content').slideToggle('slow', 'swing');
       
     } else if (beeType == 'worker') {
-      $('#worker-content').slideToggle('slow', 'swing');
       $("#queen-content").hide();
       $("#drone-content").hide();
+      $('#worker-content').slideToggle('slow', 'swing');
     } else {
-      $('#drone-content').slideToggle('slow', 'swing');
       $("#queen-content").hide();
       $("#worker-content").hide();
+      $('#drone-content').slideToggle('slow', 'swing');
     }
   });
 
