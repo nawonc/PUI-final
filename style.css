@@ -485,7 +485,7 @@ td {
 }
 
 .facts:hover img {
-  transform: translateY(-60%);
+  transform: translateY(-100%);
 }
 
 .fact-text {
@@ -495,11 +495,11 @@ td {
   width: 100%;
   top: auto;
   left: 0;
-  bottom: -5;
+  bottom: -10;
   opacity: 0;
   padding: 10%;
   margin-top: 7%;
-  transform: translateY(150%);
+  transform: translateY(200%);
   transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
@@ -513,7 +513,7 @@ td {
 
 .facts:hover .fact-text {
   opacity: 1;
-  transform: translateY(0%);
+  transform: translateY(-80%);
   transition: transform 0.4s, opacity 0.1s;
 }
 
@@ -910,12 +910,13 @@ dfn:hover::before {top: 20px;}
   transition-delay: 0.1s;
 }
 
-.footer {
-  position: absolute;
-  bottom: 3%;
-  left: 47%;
-  font-family: 'Roboto Slab', serif;
+.end {
+  position: relative;
+  bottom: 0;
+  font-family: 'Patua One', cursive;
   font-weight: 800;
+  text-align: center;
+  justify-content: center;
 }
 
 .col-sm-5ths {
